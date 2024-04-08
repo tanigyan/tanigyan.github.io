@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Happy Anniversary Jiii</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/*</span><br />
+			<span class="space"/><span class="comments">*09-04-2023</span><br />
+			<span class="space"/><span class="comments">Once upon a time, in a land not so far away, where love bloomed like the sweetest of flowers</span><br />
+			<!--<span class="space"/><span class="comments">*2021-08-18.</span><br /> -->
+			<span class="space"/><span class="comments"> In this magical world, let us introduce our delightful couple </span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Girl name = <span class="keyword">Ms</span> Tanya<br />
+			Boy name = <span class="keyword">Mr</span> Abhigyan<br />
+			
+			<span class="comments">// Let the river of love carry them on its gentle waves </span><br />
+			
+			<span class="comments">//  Ah, behold! The boy's heart is overflowing with pure, enchanting love for the girl </span><br />
+			Loves(Boy,Girl) = true ;<br />
+			
+			<span class="comments">// and The girl's heart dances with joy, for she loves the boy with all her being</span><br />
+			Loves(Girl,Boy) = true;<br />
+
+			<span class="comments">// As the clock ticks and the seasons change</span><br />
+			<span class="comments">// No power in the universe can ever separate the boy from his beloved girl </span><br />
+			<span class="comments">// And in the same breath, no force can tear the girl away from her dashing and adored boy </span><br />
+			<span class="comments">// For they are two souls, but one heart </span><br />
+			separated(Boy,Girl) = const false;<br />
+
+			<span class="comments">// Just like the wind that playfully carries snowflakes through the sky</span><br />
+			<span class="comments">// Be it a leisurely walk or a journey of hundreds of miles </span><br />
+			
+			<span class="comments">// The boy's heart leaps with uncontainable happiness, a bliss beyond measure </span><br />
+			Happy(Boy) = true;<br />
+			<span class="comments">// // Oh, the girl! Her heart radiates with an abundance of joy, like a sunlit meadow</span><br />
+			Happy(Girl) = true;<br />
+
+			<span class="comments">// Even if fate conspires to create physical distance between them fear not, for their souls shall remain eternally intertwined</span><br />
+			<span class="comments">// The boy holds but one cherished dream, a dream that whispers in the depths of his soul </span><br />
+			boyDream = "To be the reason behind the girl's everlasting smile, to fill her life with laughter and warmth"; <br />
+
+			<span class="comments">// And the girl, oh, the girl holds but one enchanting dream, a dream that paints her world with hues of love </span><br />
+			girlDream = "To see the boy's happiness flourish like a blossoming garden, to be his pillar of strength and his source of endless joy"; <br />
+
+			<span class="comments">//  In this tale of love, where their hearts beat as one, Mr. Abhigyan and Ms. Tanya discovered a love that transcends time and space. May our love continue to bloom, brightening the world with its warmth and tenderness </span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Tanya , I am always here for you;<br />
+			Tanya , I love you;
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Tanya ❤️ Abhigyan
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I Love You<br/>
+					<div class="signature">Tanigyan</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2023,04,09);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<embed src="http://www.ytmp3.cn/down/39154.mp3" autostart="true" loop="true" hidden="true">
+</embed> 
+</body>
+</html>
